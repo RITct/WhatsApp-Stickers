@@ -14,3 +14,11 @@ script:
   - mkdir build_input
   - find . -maxdepth 1 -not -path '*/\.*' -not -path './build_input' -not -path '.' -type d  -exec cp -rfv  "{}" build_input \; # Copying all dirs to build_input dir
   - thumbsup --config config.json
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local_dir: build_output
+  committer-from-gh: true
+  github-token:  $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  on:
+    branch: gallery
