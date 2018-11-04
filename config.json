@@ -1,0 +1,10 @@
+{
+  "input": "./build_input",
+  "output": "./build_output",
+  "title": "Whastapp Sticker Gallery",
+  "sort-albums-by": "title",
+  "sort-media-by": "filename",
+  "download-photos": "copy",
+  "cleanup": true,
+  "theme": "cards"
+}

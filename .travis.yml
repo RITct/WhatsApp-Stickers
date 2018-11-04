@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "node"
+before_script:
+  - npm install -g thumbsup
+script:
+  - mkdir build_input
+  - find . -maxdepth 1 -not -path '*/\.*' -not -path './build_input' -not -path '.' -type d  -exec cp -rfv  "{}" build_input \; # Copying all dirs to build_input dir
+  - thumbsup --config config.json
