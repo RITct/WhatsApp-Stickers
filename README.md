@@ -1,4 +1,4 @@
-# WhatsApp Stickers
+# WhatsApp Stickers [![Build Status](https://travis-ci.org/RITct/WhatsApp-Stickers.svg?branch=master)](https://travis-ci.org/RITct/WhatsApp-Stickers)
 
 ## General
 
