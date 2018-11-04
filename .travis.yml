@@ -1,7 +1,14 @@
 language: node_js
+sudo: required
 node_js:
   - "node"
 before_script:
+  - sudo apt install libimage-exiftool-perl
+  - sudo apt-get install python-software-properties
+  - sudo apt-get install software-properties-common
+  - sudo add-apt-repository ppa:rwky/graphicsmagick
+  - sudo apt-get update
+  - sudo apt-get install graphicsmagick
   - npm install -g thumbsup
 script:
   - mkdir build_input
