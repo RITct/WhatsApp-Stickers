@@ -1,3 +1,7 @@
 .lg-backdrop {
     background-color: #503a3a !important;
 }
+
+.lg-outer .lg-thumb-outer {
+    background-color: #311e20 !important;
+}
