@@ -6,5 +6,6 @@
   "sort-media-by": "filename",
   "download-photos": "copy",
   "cleanup": true,
-  "theme": "cards"
+  "theme": "cards",
+  "theme-style": "./custom.css"
 }
