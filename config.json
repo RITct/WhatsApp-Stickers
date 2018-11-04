@@ -7,5 +7,7 @@
   "download-photos": "copy",
   "cleanup": true,
   "theme": "cards",
-  "theme-style": "./custom.css"
+  "theme-style": "./custom.css",
+  "footer": "Created with &hearts; By <a href='https://github.com/RITct/WhatsApp-Stickers/graphs/contributors'>Contributors</a>, Powered by <a href='https://github.com/RITct'>RITCT</a>."
+
 }
