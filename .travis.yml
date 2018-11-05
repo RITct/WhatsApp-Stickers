@@ -2,14 +2,17 @@ language: node_js
 sudo: required
 node_js:
   - "node"
-before_script:
-  - sudo apt-get install -y libimage-exiftool-perl
-  - sudo apt-get -y install python-software-properties
-  - sudo apt-get -y install software-properties-common
-  - sudo add-apt-repository -y ppa:rwky/graphicsmagick
-  - sudo apt-get -y update
-  - sudo apt-get -y install graphicsmagick
-  - npm install -g thumbsup
+before_install:
+- sudo add-apt-repository -y ppa:rwky/graphicsmagick
+- sudo add-apt-repository -y ppa:mc3man/trusty-media
+- sudo apt-get -y update
+- sudo apt-get install -y libimage-exiftool-perl
+- sudo apt-get -y install python-software-properties
+- sudo apt-get -y install software-properties-common
+- sudo apt-get -y install ffmpeg
+- sudo apt-get -y install graphicsmagick
+- sudo apt-get -y install gifsicle
+- npm install -g thumbsup
 script:
   - mkdir build_input
   - find . -maxdepth 1 -not -path '*/\.*' -not -path './build_input' -not -path '.' -type d  -exec cp -rfv  "{}" build_input \; # Copying all dirs to build_input dir
