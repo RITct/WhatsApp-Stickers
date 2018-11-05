@@ -14,8 +14,9 @@ before_install:
 - sudo apt-get -y install gifsicle
 - npm install -g thumbsup
 script:
+  - rm -rdf build_output/ build_input/ #clear existing folders
   - mkdir build_input
-  - find . -maxdepth 1 -not -path '*/\.*' -not -path './build_input' -not -path '.' -type d  -exec cp -rfv  "{}" build_input \; # Copying all dirs to build_input dir
+  - find . -maxdepth 1 -not -path '*/\.*' -not -path './build_input' -not -path '.' -type d  -exec cp -rfv  "{}" ./build_input \; # Copying all dirs to build_input dir
   - thumbsup --config config.json
 deploy:
   provider: pages
