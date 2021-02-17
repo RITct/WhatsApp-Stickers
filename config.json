@@ -1,5 +1,5 @@
 {
-  "input": "./build_input",
+  "input": "./gallery",
   "output": "./build_output",
   "title": "Whastapp Sticker Gallery",
   "sort-albums-by": "title",
